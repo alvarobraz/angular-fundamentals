@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,24 +9,11 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 })
 export class AppComponent implements OnInit  {
 
-
-  // public valor: number = 1;
-
-  // public buttonTitle: string =  ""
-
-  // public destruir: boolean = true;
-
   constructor() {
   }
 
-  // public adicionar(): number {
-  //   return this.valor +=1
-  // }
 
   ngOnInit(): void {
-    // this.buttonTitle = "Ocultar componente"
   }
-
-
 
 }
