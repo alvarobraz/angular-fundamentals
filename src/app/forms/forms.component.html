@@ -36,6 +36,14 @@
     React:
     <input type="checkbox" name="react" ngModel>
   </label>
+  <br>
+  <br>
+  <select name="comidas" ngModel>
+    <option value="">Selecione</option>
+    <option *ngFor="let item of ListComidas let i = index" [ngValue]="item">
+      {{ item.comida }} - {{ item.preco }}
+    </option>
+  </select>
 </form>
 <br>
 <br>
