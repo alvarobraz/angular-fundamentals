@@ -9,6 +9,7 @@ export class DiretivasAtributosComponent implements OnInit {
 
   public valor: boolean = true
   public cor: string = 'vermelha'
+  public height: string = ''
 
   constructor() { }
 
@@ -23,6 +24,19 @@ export class DiretivasAtributosComponent implements OnInit {
     else {
       this.valor = true
       this.cor = 'vermelha'
+    }
+  }
+
+  public changeHeightBackground() {
+    if(this.height === '') {
+      this.height = '50px'
+    }
+    else
+    if(this.height === '50px') {
+      this.height = '20px'
+    }
+    else {
+      this.height = '50px'
     }
   }
 

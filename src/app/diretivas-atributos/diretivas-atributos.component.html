@@ -2,3 +2,9 @@
 <br>
 <br>
 <button (click)="changeBackground()">Alterar para cor {{cor}}</button>
+<br>
+<br>
+<p [ngStyle]="{'height': height}" style="background: blue; ">ngStyle</p>
+<br>
+<br>
+<button (click)="changeHeightBackground()">Alterar altura para {{height === '' ? '50px' : height === '50px' ? '20px' : '50px'}}</button>
