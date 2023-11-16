@@ -16,14 +16,21 @@ import { Component, OnInit } from '@angular/core';
     <!-- <app-diretivas-atributos></app-diretivas-atributos> -->
     <!-- <app-new-component></app-new-component> -->
 
-    <app-input [contador]="valueContador"></app-input>
+    <!-- <app-input [contador]="valueContador"></app-input>
     <button (click)="increment()">Incrementar contador</button>
-    <router-outlet></router-outlet>
+    <router-outlet></router-outlet> -->
+    <ng-template [ngIf]="getDados">
+    <h1>{{ getDados.nome }}</h1>
+    <h2>{{ getDados.idade }}</h2>
+   </ng-template>
+    <app-output (enviarDados)="setDados($event)"></app-output>
   `
 })
 export class AppComponent implements OnInit  {
 
   public valueContador: number = 0
+
+  public getDados: { nome: string, idade: number } | undefined
 
   constructor() {
   }
@@ -34,6 +41,10 @@ export class AppComponent implements OnInit  {
 
   public increment() {
     this.valueContador += 1
+  }
+
+  public setDados(event: { nome: string, idade: number }) {
+    this.getDados = event;
   }
 
 }
