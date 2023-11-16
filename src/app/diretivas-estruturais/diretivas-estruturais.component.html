@@ -12,3 +12,12 @@
 <button (click)="onClick()">Clicar</button>
 
 
+<hr>
+
+<ul>
+  <!-- <li *ngFor="let item of list let i = index" (click)="onClickEventList($event)">[{{i}}] - {{item.nome}}</li> -->
+  <li *ngFor="let item of list let i = index" (click)="onClickEventList(i)">[{{i}}] - {{item.nome}}</li>
+</ul>
+<br>
+<br>
+<button (click)="onClickAddList()">Adicionar</button>

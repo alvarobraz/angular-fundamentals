@@ -10,6 +10,12 @@ export class DiretivasEstruturaisComponent implements OnInit {
 
   public conditionClick: boolean = true
 
+  public list: Array<{ nome: string }> = [
+    { nome: "Álvaro Braz" },
+    { nome: "Arthur Máximus da Cruz Braz" },
+    { nome: "Cristine Schio" }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
@@ -36,6 +42,16 @@ export class DiretivasEstruturaisComponent implements OnInit {
     }
   }
 
+  public onClickAddList() {
+    this.list.push({ nome: "Rosangela Braz" })
+  }
 
+  // public onClickEventList(event: MouseEvent) {
+  //   console.log(event)
+  // }
+  public onClickEventList(event: number) {
+    console.log(event)
+    this.list.splice(event, 1)
+  }
 
 }
