@@ -10,7 +10,7 @@ import { FoodListService } from 'src/app/services/food-list.service';
 })
 export class FoodListComponent implements OnInit {
 
-  public foodList: Array<{name: string, price: number }> = [];
+  public foodList: Array<{name: string, price: string }> = [];
 
   constructor(private foodListService: FoodListService) { }
 
