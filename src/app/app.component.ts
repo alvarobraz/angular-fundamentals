@@ -13,7 +13,8 @@ import { Component, OnInit } from '@angular/core';
       <h1>Diretivas 2</h1>
       <h3>Final da aula 2</h3>
     </app-diretivas-atributos> -->
-    <app-diretivas-atributos></app-diretivas-atributos>
+    <!-- <app-diretivas-atributos></app-diretivas-atributos> -->
+    <app-new-component></app-new-component>
     <router-outlet></router-outlet>
   `
 })
