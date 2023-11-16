@@ -1,0 +1,17 @@
+<form #form="ngForm">
+
+  <label>
+    Nome:
+    <input type="text" name="nome" ngModel>
+  </label>
+  <br>
+  <br>
+  <label>
+    Idade:
+    <input type="text" name="idade" ngModel>
+  </label>
+</form>
+<br>
+<br>
+
+{{ form.value | json }}
