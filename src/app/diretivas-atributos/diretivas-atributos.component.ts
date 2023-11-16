@@ -10,6 +10,13 @@ export class DiretivasAtributosComponent implements OnInit {
   public valor: boolean = true
   public cor: string = 'vermelha'
   public height: string = ''
+  public name: string = ''
+
+  public list: Array<{ name: string }> = [
+    { name: "Álvaro Braz" },
+    { name: "Arthur Máximus da Cruz Braz" },
+    { name: "Cristine Schio" }
+  ]
 
   constructor() { }
 
@@ -39,5 +46,12 @@ export class DiretivasAtributosComponent implements OnInit {
       this.height = '50px'
     }
   }
+
+
+  public salvar() {
+    this.list.push({name: this.name})
+    this.name = ''
+  }
+
 
 }

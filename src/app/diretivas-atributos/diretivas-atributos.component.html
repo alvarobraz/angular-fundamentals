@@ -1,10 +1,29 @@
+<h2>[ngClass]</h2>
 <p [ngClass]="{'active': valor, 'disabled': !valor}">ngClass</p>
 <br>
 <br>
+<hr>
 <button (click)="changeBackground()">Alterar para cor {{cor}}</button>
 <br>
 <br>
+<hr>
+<h2>[ngStyle]</h2>
 <p [ngStyle]="{'height': height}" style="background: blue; ">ngStyle</p>
 <br>
 <br>
 <button (click)="changeHeightBackground()">Alterar altura para {{height === '' ? '50px' : height === '50px' ? '20px' : '50px'}}</button>
+<hr>
+<h2>[(ngModel)]</h2>
+<input [(ngModel)]="name" />
+<br>
+<br>
+<button (click)="salvar()">Adicionar {{ name }}</button>
+<br>
+<br>
+<ul>
+  <li *ngFor="let item of list let i = index">{{ item.name }}</li>
+</ul>
+
+<br>
+<br>
+<hr>
