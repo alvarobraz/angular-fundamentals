@@ -12,11 +12,7 @@ export class DiretivasAtributosComponent implements OnInit {
   public height: string = ''
   public name: string = ''
 
-  public list: Array<{ name: string }> = [
-    { name: "Álvaro Braz" },
-    { name: "Arthur Máximus da Cruz Braz" },
-    { name: "Cristine Schio" }
-  ]
+  public list: Array<{ name: string }> = []
 
   constructor() { }
 
