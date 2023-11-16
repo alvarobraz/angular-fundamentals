@@ -1,4 +1,5 @@
-<!-- <h2>[ngClass]</h2>
+<ng-content select="h1"></ng-content>
+<h2>[ngClass]</h2>
 <p [ngClass]="{'active': valor, 'disabled': !valor}">ngClass</p>
 <br>
 <br>
@@ -25,7 +26,7 @@
 </ul>
 
 <br>
-<br> -->
+<br>
 <hr>
 <h2>ng-template</h2>
 <ng-template ngFor let-item [ngForOf]="list">
@@ -39,3 +40,9 @@
 <br>
 <br>
 <button (click)="salvar()">Adicionar {{ name }} no ng-template</button>
+<br>
+<br>
+<ng-content select="h3"></ng-content>
+<hr>
+
+

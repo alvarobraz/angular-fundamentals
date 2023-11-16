@@ -4,7 +4,15 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-root',
   template: `
     <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
-    <app-diretivas-atributos></app-diretivas-atributos>
+    <app-diretivas-atributos>
+      <h1>Diretivas</h1>
+      <h3>Final da aula</h3>
+    </app-diretivas-atributos>
+
+    <app-diretivas-atributos>
+      <h1>Diretivas 2</h1>
+      <h3>Final da aula 2</h3>
+    </app-diretivas-atributos>
     <router-outlet></router-outlet>
   `
 })
