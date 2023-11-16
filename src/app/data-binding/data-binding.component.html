@@ -14,3 +14,24 @@
 <button [disabled]="checkedDisabled">Button</button>
 <br/><br/>
 <img [src]="imgTest" [title]="imgTitle"/>
+
+<br>
+<br>
+<hr>
+
+<h2>Event Binding</h2>
+<br>
+<br>
+
+<button (click)="alertInfo('Mensagem aqui passada como parâmetro')">Button</button>
+<br>
+<br>
+<button (click)="alertInfo_a($event)">Button</button>
+<br>
+<br>
+<div (mousemove)="MouseMove($event)" style="background: red; width: 300px; height: 300px;"></div>
+<br>
+{{position.x}} - {{position.y}}
+<br>
+<br>
+<hr>

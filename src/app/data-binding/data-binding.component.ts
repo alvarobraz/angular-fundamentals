@@ -15,9 +15,25 @@ export class DataBindingComponent implements OnInit {
 
   public imgTitle: string = "Foto de Álvaro Braz"
 
+  public position: { x: number, y: number } = { x: 0, y:0 }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public alertInfo(valor: string) {
+    alert(valor)
+  }
+
+  public alertInfo_a(valor: MouseEvent) {
+    console.log(valor)
+  }
+
+  public MouseMove(valor: MouseEvent) {
+    // console.log(valor)
+    this.position.x = valor.offsetX;
+    this.position.y = valor.offsetY;
   }
 
 }
