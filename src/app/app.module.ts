@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas
 import { DiretivasAtributosComponent } from './diretivas-atributos/diretivas-atributos.component';
 import { SharedModule } from './shared/shared.module';
 import { FormsComponent } from './forms/forms.component';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 
 
 @NgModule({
@@ -20,13 +21,15 @@ import { FormsComponent } from './forms/forms.component';
     DataBindingComponent,
     DiretivasEstruturaisComponent,
     DiretivasAtributosComponent,
-    FormsComponent
+    FormsComponent,
+    ReactiveformsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     SharedModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

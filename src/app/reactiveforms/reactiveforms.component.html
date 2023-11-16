@@ -1,0 +1,20 @@
+<form [formGroup]="cadastroForm" (ngSubmit)="submitForm()">
+  <label>
+    Primeiro nome:
+    <br>
+    <input type="text" formControlName="firstName">
+  </label>
+  <br>
+  <br>
+  <label>
+    Último nome:
+    <br>
+    <input type="text" formControlName="lastName">
+  </label>
+  <br>
+  <br>
+  <button>Enviar</button>
+  <br>
+  <br>
+  {{ cadastroForm.get('firstName')?.value }} -  {{ cadastroForm.get('lastName')?.value }}
+</form>

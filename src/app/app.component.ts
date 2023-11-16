@@ -28,7 +28,9 @@ import { Component, OnInit } from '@angular/core';
     <!-- <app-food-add></app-food-add>
     <app-food-list></app-food-list> -->
 
-    <app-forms></app-forms>
+    <!-- <app-forms></app-forms> -->
+
+    <!-- <app-reactiveforms></app-reactiveforms> -->
     <router-outlet></router-outlet>
   `
 })
