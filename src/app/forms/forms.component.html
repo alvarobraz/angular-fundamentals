@@ -2,8 +2,21 @@
 
   <label>
     Nome:
-    <input type="text" name="nome" ngModel>
+    <!-- <input type="text" name="nome" ngModel required=""> -->
+    <input type="text" name="nome" #nome="ngModel" [ngModel]="nome.value" required="">
   </label>
+  <br>
+  <span *ngIf="!nome.valid && nome.dirty && nome.touched">
+    O campo nome é obrigatório
+  </span>
+  <br>
+  <br>
+  {{ nome.valid }}
+  <br>
+  {{ nome.dirty }}
+  <br>
+  {{ nome.touched }}
+  <!-- {{ form.valid }} -->
   <br>
   <br>
   <label>
