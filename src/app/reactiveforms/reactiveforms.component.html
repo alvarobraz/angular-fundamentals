@@ -14,6 +14,21 @@
     Último nome:
     <br>
     <input type="text" formControlName="lastName">
+    <span
+    *ngIf="
+    cadastroForm.get('lastName')?.errors?.minlength?.requiredLength &&
+    cadastroForm.get('lastName')?.errors?.minlength?.actualLength"
+    >
+      Mínimo de {{cadastroForm.get('lastName')?.errors?.minlength?.requiredLength}}
+      e você digitou {{ cadastroForm.get('lastName')?.errors?.minlength?.actualLength }}
+    </span>
+  </label>
+  <br>
+  <br>
+  <label>
+    E-mail:
+    <br>
+    <input type="email" formControlName="email">
   </label>
   <br>
   <br>
@@ -21,7 +36,9 @@
   <br>
   <br>
   <!-- {{ cadastroForm.get('firstName')?.errors | json }} -  {{ cadastroForm.get('lastName')?.value }} -->
-  {{ cadastroForm.get('firstName')?.errors | json }}
+  <!-- {{ cadastroForm.get('firstName')?.errors | json }}
   {{ cadastroForm.get('firstName')?.touched | json }}
-  {{ cadastroForm.get('firstName')?.dirty | json }}
+  {{ cadastroForm.get('firstName')?.dirty | json }} -->
+
+  {{ cadastroForm.get('lastName')?.errors | json }}
 </form>
