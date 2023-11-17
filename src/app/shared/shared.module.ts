@@ -12,6 +12,8 @@ import { FoodAddComponent } from './food-add/food-add.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { AccountComponent } from './account/account.component';
 
 
 
@@ -22,7 +24,9 @@ import { AppRoutingModule } from '../app-routing.module';
     OutputComponent,
     FoodListComponent,
     FoodAddComponent,
-    MenuComponent
+    MenuComponent,
+    HomeComponent,
+    AccountComponent
   ],
   exports: [
     NewComponentComponent,
