@@ -3,6 +3,10 @@
     Primeiro nome:
     <br>
     <input type="text" formControlName="firstName">
+    <br>
+    <span *ngIf="cadastroForm.get('firstName')?.errors && cadastroForm.get('firstName')?.touched">
+      Campo nome Obrigatório
+    </span>
   </label>
   <br>
   <br>
@@ -16,5 +20,8 @@
   <button>Enviar</button>
   <br>
   <br>
-  {{ cadastroForm.get('firstName')?.value }} -  {{ cadastroForm.get('lastName')?.value }}
+  <!-- {{ cadastroForm.get('firstName')?.errors | json }} -  {{ cadastroForm.get('lastName')?.value }} -->
+  {{ cadastroForm.get('firstName')?.errors | json }}
+  {{ cadastroForm.get('firstName')?.touched | json }}
+  {{ cadastroForm.get('firstName')?.dirty | json }}
 </form>

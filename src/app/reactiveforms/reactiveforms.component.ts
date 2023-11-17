@@ -9,7 +9,7 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 export class ReactiveformsComponent implements OnInit {
 
   public cadastroForm: FormGroup = this.formBuilder.group({
-    firstName: [''],
+    firstName: ['', Validators.required],
     lastName: ['']
   })
 
