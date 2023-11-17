@@ -17,7 +17,7 @@
   </label>
   <br>
   <br>
-  <button>Enviar</button>
+  <button [disabled]="cadastroForm.invalid" >Enviar</button>
   <br>
   <br>
   <!-- {{ cadastroForm.get('firstName')?.errors | json }} -  {{ cadastroForm.get('lastName')?.value }} -->
