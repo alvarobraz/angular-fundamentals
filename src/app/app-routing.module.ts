@@ -13,6 +13,7 @@ import { AccountComponent } from './shared/account/account.component';
 
 //Guards
 import { CanActivateGuard } from './shared/guards/can-activate.guard';
+import { CanDeactivateGuard } from './shared/guards/can-deactivate.guard';
 
 // const routes: Routes = [{
 //   path: '',
@@ -34,7 +35,7 @@ import { CanActivateGuard } from './shared/guards/can-activate.guard';
 
 const routes: Routes = [
   { path : '', component: HomeComponent },
-  { path : 'account', component: AccountComponent, canActivate: [CanActivateGuard] },
+  { path : 'account', component: AccountComponent, canActivate: [CanActivateGuard], canDeactivate: [CanDeactivateGuard] },
 ];
 
 @NgModule({

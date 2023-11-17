@@ -12,4 +12,12 @@ export class AccountComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public exit(): boolean {
+    if(confirm('Você deseja sair?')) {
+      return true
+    }
+
+    return false
+  }
+
 }
