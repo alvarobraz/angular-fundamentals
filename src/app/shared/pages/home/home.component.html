@@ -4,10 +4,10 @@
 <a routerLink="account" [queryParams]="{ account: 'admin', password: 'sdasdasd' }">Account false</a>
 <br>
 <br>
-<a routerLink="core">Dashboard</a>
+<a routerLink="core" [queryParams]="{ account: 'admin', password: '1234567' }">Dashboard</a>
 <br>
 <br>
-<a routerLink="core/leads">Leads</a>
+<a routerLink="core/leads" [queryParams]="{ account: 'admin', password: '1234567' }">Leads</a>
 <br>
 <br>
 <h2>Home</h2>
